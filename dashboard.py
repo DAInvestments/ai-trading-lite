@@ -13,7 +13,7 @@ st.markdown(f"Date: **{datetime.now().strftime('%A, %d %B %Y')}**")
 
 # --- WATCHLIST INPUT ---
 st.subheader("🔧 Your ASX Watchlist")
-def_watchlist = "CSL.AX, BHP.AX, NAB.AX, RIO.AX"
+def_watchlist = "CSL.AX, BHP.AX, NAB.AX, RIO.AX, WBC.AX, NCK.AX, VSCO, MGR.AX"
 user_input = st.text_input("Enter ASX tickers (comma separated):", def_watchlist)
 watchlist = [ticker.strip().upper() for ticker in user_input.split(",") if ticker.strip()]
 
